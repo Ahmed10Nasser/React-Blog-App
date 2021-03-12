@@ -1,0 +1,126 @@
+/*________________________________________________*__________________________________________*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: "Quicksand";
+}
+button{
+  border: none;
+  background-color: #f1356d;
+  color: white;
+  padding: 7.5px 7.5px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+/*________________________________________________navbar__________________________________________*/
+.navbar{
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 20px;
+}
+.navbar h1{
+  color: #f1356d;
+}
+.navbar a{
+  text-decoration: none;
+  margin-left: 30px;
+}
+.navbar a:hover{
+  color: #f1356d;
+}
+/*________________________________________________content__________________________________________*/
+.content{
+  max-width: 600px;
+  margin: 75px auto;
+  padding: 20px;
+}
+/*__________________________________________________blog-preview___________________________________*/
+.blog-preview{
+  margin-top: 30px;
+  padding: 20px;
+  border-bottom: 1px solid #fafafa;
+}
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.blog-preview a{
+  text-decoration: none;
+}
+.blog-preview h2{
+  color: #f1356d;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+/*__________________________________________________blog-details___________________________________*/
+.blog-details .blog-header{
+  display: flex;
+
+}
+.blog-details .blog-info{
+  flex: 50%;
+}
+.blog-details .delete-blog{
+  flex: 50%;
+}
+.blog-details h2{
+  color: #f1356d;
+}
+.blog-details p{
+  margin: 15px 0 25px 0px;
+}
+.pop-message{
+  font-size: 13px;
+  position: relative;
+  opacity: 0;
+  background-color: #f1356d;
+  color: white;
+  max-width: fit-content;
+  padding: 5px;
+  margin: 5px 0;
+}
+.pop-message::before{
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+  bottom: 100%;
+  left: 0;
+}
+
+.pop-show{
+  opacity: 1;
+}
+/*__________________________________________________create___________________________________*/
+.create{
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+}
+.create h2{
+  color: #f1356d;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.create input, .content textarea, .create select{
+  display: block;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin: 10px 0;
+  padding: 6px 10px;
+  box-sizing: border-box;
+  resize: none;
+  outline-color: #f1356d;
+}
+.create button{
+  margin-top: 20px;
+}
